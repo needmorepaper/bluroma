@@ -1,4 +1,4 @@
-<img src="meta/logo.png" alt="The Bluroma logo, containing three rectangles with one rounded corner each shaped to look like an uppercase B and the Bluroma name written in the Convection font beside it." width="200">
+<img src="static/logo.png" alt="The Bluroma logo, containing three rectangles with one rounded corner each shaped to look like an uppercase B and the Bluroma name written in the Convection font beside it." width="200">
 
 ## About
 

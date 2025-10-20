@@ -39,9 +39,15 @@ body {
         }
 
         img {
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.15s;
+            padding-bottom: 0.5rem;
             height: 2.5rem;
             filter: grayscale(1);
-            padding-bottom: 0.5rem;
+        }
+
+        img:hover {
+            filter: grayscale(0);
         }
     }
 
