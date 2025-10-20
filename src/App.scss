@@ -1,0 +1,10 @@
+$backgroundColor: rgba(12, 17, 24, 1);
+$textColor: #b9b9ba;
+
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1rem;
+}
