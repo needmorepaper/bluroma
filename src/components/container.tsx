@@ -11,7 +11,7 @@ const Container = (props: ContainerProps) => {
       <div class="container-header">
         <span>{props.title}</span>
       </div>
-      <div>{props.children}</div>
+      {props.children}
     </div>
   );
 };

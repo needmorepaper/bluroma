@@ -2,7 +2,7 @@
 
 ## About
 
-Bluroma is a client for [Bluesky](https://bsky.social) inspired by the [Pleroma](https://pleroma.social)/[Akkoma](https://akkoma.social) frotnend. Its goals are to provide a customizable experience designed for power users.
+Bluroma is a client for [Bluesky](https://bsky.social) inspired by the [Pleroma](https://pleroma.social)/[Akkoma](https://akkoma.social) frontend. Its main goal is to provide a customizable experience designed specifically for power users.
 
 ## Build for development
 

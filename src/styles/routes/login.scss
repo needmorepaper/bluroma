@@ -1,0 +1,73 @@
+@use "../vars";
+
+.typeface {
+    max-width: 400px;
+    width: 75%;
+}
+
+.logo-crawl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        transition: filter 0.25s ease-in-out;
+        max-height: 48px;
+        width: 48px;
+        /* lol? */
+        filter: brightness(0) saturate(100%) invert(91%) sepia(100%)
+            saturate(0%) hue-rotate(184deg) brightness(103%) contrast(102%);
+    }
+
+    img:hover {
+        transition: filter 0.25s ease-in-out;
+        filter: brightness(0) saturate(100%) invert(33%) sepia(76%)
+            saturate(1839%) hue-rotate(198deg) brightness(103%) contrast(99%);
+    }
+}
+
+hr {
+    color: vars.$textColor;
+    border: none;
+    border-top: 1px solid vars.$textColor;
+    max-width: 90%;
+}
+
+/* Login menu */
+
+.login,
+.login > form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 24px;
+    padding: 0.3em 0.5em 0;
+
+    label {
+        margin-bottom: 0.25rem;
+    }
+
+    input {
+        background-color: vars.$foregroundColor;
+        border: 0;
+        border-radius: 3px;
+        box-shadow:
+            0px 1px 0px 0px rgba(0, 0, 0, 0.2) inset,
+            0px -1px 0px 0px rgba(255, 255, 255, 0.2) inset,
+            0px 0px 2px 0px rgba(0, 0, 0, 1) inset;
+        color: vars.$textColor;
+        padding: 0.5rem;
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        text-align: right;
+        align-self: flex-end;
+        border-radius: vars.$containerBorderRadius;
+    }
+}

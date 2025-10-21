@@ -1,0 +1,33 @@
+@use "vars";
+
+#nav {
+    box-shadow:
+        0px 1px 4px 0px rgba(0, 0, 0, 0.4),
+        0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-start: span 5;
+    grid-row-start: span 1;
+    background-color: vars.$foregroundColor;
+    height: 3.5rem;
+    padding-right: 0;
+    width: 100%;
+}
+
+.center-nav {
+    grid-column: 3;
+    position: relative;
+
+    img {
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.15s;
+        margin-top: 0.5rem;
+        height: 2.5rem;
+        filter: grayscale(1);
+    }
+
+    img:hover {
+        filter: grayscale(0);
+    }
+}
