@@ -5,9 +5,13 @@ import typefaceLogo from "/logo.png?url";
 import blueskyLogo from "/bluesky.svg?url";
 import tangledLogo from "/tangled.svg?url";
 import Container from "../components/container";
-import { Login } from "../components/login";
+import { Login, loginState } from "../components/login";
 
 const Splash: Component = () => {
+  if (loginState()) {
+    location.href = "/dash";
+  }
+
   return (
     <>
       <div id="sidebar">

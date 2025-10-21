@@ -1,0 +1,30 @@
+@use "vars";
+
+.mini-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: vars.$containerBorderRadius;
+
+    img {
+        max-height: 64px;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+    }
+}
+
+.mini-profile-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+
+    p {
+        margin: 0;
+    }
+}

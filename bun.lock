@@ -4,6 +4,8 @@
     "": {
       "name": "vite-template-solid",
       "dependencies": {
+        "@atcute/bluesky": "^3.2.8",
+        "@atcute/client": "^4.0.5",
         "@atcute/lexicons": "^1.2.2",
         "@atcute/oauth-browser-client": "^1.0.27",
         "@solidjs/router": "^0.15.3",
@@ -20,6 +22,10 @@
     },
   },
   "packages": {
+    "@atcute/atproto": ["@atcute/atproto@3.1.8", "", { "dependencies": { "@atcute/lexicons": "^1.2.2" } }, "sha512-Miu+S7RSgAYbmQWtHJKfSFUN5Kliqoo4YH0rILPmBtfmlZieORJgXNj9oO/Uive0/ulWkiRse07ATIcK8JxMnw=="],
+
+    "@atcute/bluesky": ["@atcute/bluesky@3.2.8", "", { "dependencies": { "@atcute/atproto": "^3.1.8", "@atcute/lexicons": "^1.2.2" } }, "sha512-wxEnSOvX7nLH4sVzX9YFCkaNEWIDrTv3pTs6/x4NgJ3AJ3XJio0OYPM8tR7wAgsklY6BHvlAgt3yoCDK0cl1CA=="],
+
     "@atcute/client": ["@atcute/client@4.0.5", "", { "dependencies": { "@atcute/identity": "^1.1.1", "@atcute/lexicons": "^1.2.2" } }, "sha512-R8Qen8goGmEkynYGg2m6XFlVmz0GTDvQ+9w+4QqOob+XMk8/WDpF4aImev7WKEde/rV2gjcqW7zM8E6W9NShDA=="],
 
     "@atcute/identity": ["@atcute/identity@1.1.1", "", { "dependencies": { "@atcute/lexicons": "^1.2.2", "@badrap/valita": "^0.4.6" } }, "sha512-zax42n693VEhnC+5tndvO2KLDTMkHOz8UExwmklvJv7R9VujfEwiSWhcv6Jgwb3ellaG8wjiQ1lMOIjLLvwh0Q=="],

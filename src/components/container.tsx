@@ -8,9 +8,13 @@ type ContainerProps = {
 const Container = (props: ContainerProps) => {
   return (
     <div class="container">
-      <div class="container-header">
-        <span>{props.title}</span>
-      </div>
+      {props.title ? (
+        <div class="container-header">
+          <span>{props.title}</span>
+        </div>
+      ) : (
+        <></>
+      )}
       {props.children}
     </div>
   );

@@ -19,6 +19,8 @@
     "vite-plugin-solid": "^2.11.8"
   },
   "dependencies": {
+    "@atcute/bluesky": "^3.2.8",
+    "@atcute/client": "^4.0.5",
     "@atcute/lexicons": "^1.2.2",
     "@atcute/oauth-browser-client": "^1.0.27",
     "@solidjs/router": "^0.15.3",

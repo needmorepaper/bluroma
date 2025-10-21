@@ -1,7 +1,7 @@
 @use "./vars";
 
 .container {
-    background-color: rgba(15, 22, 30, 1);
+    background-color: #24262d;
     border-radius: vars.$containerBorderRadius;
     margin: 1em;
     padding: 0 0 1em 0;
@@ -16,7 +16,6 @@
 }
 
 .container-header {
-    font-weight: 500;
     background-color: vars.$foregroundColor;
     text-align: left;
     padding: 1em;
