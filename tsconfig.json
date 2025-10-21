@@ -15,6 +15,6 @@
 
     // Type Checking & Safety
     "strict": true,
-    "types": ["vite/client", "@atcute/bluesky"]
+    "types": ["vite/client", "@atcute/bluesky", "@atcute/atproto"]
   }
 }
