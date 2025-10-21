@@ -2,22 +2,16 @@
 import { render } from "solid-js/web";
 import "solid-devtools";
 import { Route, Router } from "@solidjs/router";
-
-import Login from "./routes/login";
-
-const root = document.getElementById("root");
-
-if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
-  throw new Error(
-    "Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?",
-  );
-}
+import Splash from "./routes/splash";
+import Base from "./base";
+import Dashboard from "./routes/dashboard";
 
 render(
   () => (
-    <Router root={Login}>
-      <Route path="/" component={Login} />
+    <Router root={Base}>
+      <Route path="/" component={Splash} />
+      <Route path="/dash" component={Dashboard} />
     </Router>
   ),
-  root!,
+  document.getElementById("root") as HTMLElement,
 );

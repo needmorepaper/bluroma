@@ -27,3 +27,13 @@
         0px 1px 3px 0px rgba(0, 0, 0, 0.4),
         0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
 }
+
+.submitInfo {
+    background-color: rgba(211, 16, 20, 0.5);
+    border-radius: vars.$containerBorderRadius;
+    color: rgba(185, 185, 186, 1);
+    padding: 0.5rem 1rem;
+    width: 80%;
+    text-align: center;
+    align-self: center;
+}
