@@ -27,6 +27,7 @@
     "@atcute/oauth-browser-client": "^1.0.27",
     "@atcute/tid": "^1.0.3",
     "@solidjs/router": "^0.15.3",
+    "@yaireo/relative-time": "^1.1.0",
     "solid-js": "^1.9.5"
   }
 }

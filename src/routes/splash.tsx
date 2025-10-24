@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import Navbar from "../components/navbar";
 import "../styles/main.scss";
 import typefaceLogo from "/logo.png?url";
 import blueskyLogo from "/bluesky.svg?url";

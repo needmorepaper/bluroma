@@ -2,7 +2,6 @@ import { Component, createSignal } from "solid-js";
 import { agent } from "./login";
 import { Client } from "@atcute/client";
 import * as TID from "@atcute/tid";
-import RichtextBuilder from "@atcute/bluesky-richtext-builder";
 
 const PostForm: Component = () => {
   const [notice, setNotice] = createSignal("");
