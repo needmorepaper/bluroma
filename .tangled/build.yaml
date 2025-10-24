@@ -1,0 +1,23 @@
+when:
+  - event: [ "push", "pull_request" ]
+    branch: [ "main" ]
+  - event: [ "manual" ]
+
+engine: "nixery"
+
+dependencies:
+  nixpkgs:
+    - bun
+    - nodejs
+
+steps:
+  - name: "Install dependencies"
+    command: "bun install"
+
+  - name: "Build app"
+    command: "bun run build"
+
+clone:
+  skip: false
+  depth: 50
+  submodules: true
