@@ -32,7 +32,7 @@ const Splash: Component = () => {
                 intends to provide a similar user interface for Bluesky users.
               </p>
               <div class="logo-crawl">
-                <a href="https://bsky.social/profile/did:plc:5szlrh3xkfxxsuu4mo6oe6h7">
+                <a href="https://bsky.app/profile/did:plc:5szlrh3xkfxxsuu4mo6oe6h7">
                   <img src={blueskyLogo} />
                 </a>
                 <a href="https://tangled.org/@hexmani.ac/bluroma">
