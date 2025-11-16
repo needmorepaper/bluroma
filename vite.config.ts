@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 import devtools from "solid-devtools/vite";
-import metadata from "./static/oauth/client-metadata.json";
+import metadata from "./static/oauth-client-metadata.json";
 
 const SERVER_HOST = "127.0.0.1";
 const SERVER_PORT = 3000;

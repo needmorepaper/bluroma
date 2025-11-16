@@ -1,5 +1,5 @@
 {
-  "client_id": "https://pl.hexmani.ac/oauth/client-metadata.json",
+  "client_id": "https://pl.hexmani.ac/oauth-client-metadata.json",
   "client_name": "Bluroma",
   "client_uri": "https://pl.hexmani.ac",
   "redirect_uris": ["https://pl.hexmani.ac/"],
