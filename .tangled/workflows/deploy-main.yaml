@@ -1,0 +1,41 @@
+when:
+  - event: ["push"]
+    branch: ["main"]
+  - event: ["manual"]
+
+engine: "nixery"
+
+dependencies:
+  nixpkgs:
+    - bun
+    - coreutils
+    - curl
+    - nodejs
+
+environment:
+  SITE_PATH: "dist"
+  SITE_NAME: "bluroma"
+  WISP_HANDLE: "hexmani.ac"
+
+steps:
+  - name: "Install dependencies"
+    command: "bun install --frozen-lockfile"
+
+  - name: "Build app"
+    command: "bun run build"
+
+  - name: "Deploy to Wisp"
+    command: |
+      curl https://sites.wisp.place/nekomimi.pet/wisp-cli-binaries/wisp-cli-x86_64-linux -o wisp-cli
+      chmod +x wisp-cli
+
+      ./wisp-cli deploy \
+        "$WISP_HANDLE" \
+        --path "$SITE_PATH" \
+        --site "$SITE_NAME" \
+        --password "$WISP_APP_PASSWORD"
+
+clone:
+  skip: false
+  depth: 50
+  submodules: true
