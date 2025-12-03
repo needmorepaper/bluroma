@@ -1,8 +1,8 @@
 import { Component } from "solid-js";
 import "../styles/main.scss";
-import typefaceLogo from "/logo.png?url";
-import blueskyLogo from "/bluesky.svg?url";
-import tangledLogo from "/tangled.svg?url";
+import typefaceLogo from "/media/logo.png?url";
+import blueskyLogo from "/media/bluesky.svg?url";
+import tangledLogo from "/media/tangled.svg?url";
 import Container from "../components/container";
 import { Login, loginState } from "../components/login";
 

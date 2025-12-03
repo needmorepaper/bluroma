@@ -8,7 +8,7 @@ const Navbar: Component = () => {
       <nav id="nav">
         <div class="center-nav">
           <A href={loginState() ? "/dash" : "/"}>
-            <img src="favicon.png" />
+            <img src="./favicon.png" />
           </A>
         </div>
       </nav>
